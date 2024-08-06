@@ -1,6 +1,18 @@
 	let firstName;
+	do {
+		firstName = prompt ("Как Ваше фамилия?");
+		} while (firstName === "" || firstName === null);
+
 	let lastName;
+	do {
+		lastName = prompt ("Как Ваше имя?");
+		} while (lastName === "" || lastName === null);
+
 	let middleName;
+	do {
+		middleName = prompt ("Как Ваше отчество?");
+		} while (middleName === "" || middleName === null);
+
 	let age = parseInt ( prompt ("Сколько Вам лет?"));
 	let gender = confirm ("Нажмите 'ДА' если Вы мужчина, нажмите 'ОТМЕНА' если Вы женщина");
 	let genderExp = (gender ? 'мужчина' : 'женщина');
@@ -14,18 +26,6 @@
 		if (age >= 58) {
 			pens = 'Вы на пенсии';
 		} else (pens = 'Вы не на пенсии');}
-
-		do {
-		lastName = prompt ("Как Ваше имя?");
-		} while (lastName === "" || lastName === null);
-		
-		do {
-		firstName = prompt ("Как Ваше фамилия?");
-		} while (firstName === "" && firstName === null);
-		
-		do {
-		middleName = prompt ("Как Ваше отчество?");
-		} while (middleName === "" && middleName === null);
 
 		alert (`
 ваше ФИО: ${lastName} ${firstName} ${middleName} 
